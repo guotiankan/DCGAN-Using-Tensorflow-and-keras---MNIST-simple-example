@@ -2,6 +2,8 @@
 ## Use tensorflow to build and tune a deep convolution generative adversarial network to generate images of hand-written digits from the classic MNIST dataset.
 ### The idea behind the DCGAN is very simple: Train the genrator and the discriminator using convolutional neural networks.
 
+tensorflow version: 2.1.0
+
 It is worth noticing that:<br>
 1. When building a DCGAN model, the discriminator should not have any feature extracting process like pooling and global pooling because such process will make the discriminator learn the special feature patterns when identifying real and fake images, which is not desirable. We want the discriminator to learn the differences between the distribution of data of real images and that of fake images. Pooling layers will destroy the spatial distribution patterns extracted from the conv layer.
 
